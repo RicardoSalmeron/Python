@@ -29,3 +29,4 @@ def comprar_produto(produto = "Produto desconhecido", quantidade: int = 1):
 def test(itens:list[str]):
     for i in itens: 
         print (f'{i}')
+
