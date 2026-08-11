@@ -1,0 +1,6 @@
+n1 = float(input("Informe o primeiro valor: "))
+n2 = float(input("Informe o segundo valor: "))
+soma = (n1+n2)
+multiplcacao = (n1*n2)
+print("A soma entre", n1, "e", n2, "é", soma)
+print("A multiplicação entre", n1, "e", n2, "é", multiplcacao)
