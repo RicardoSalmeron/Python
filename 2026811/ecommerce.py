@@ -20,7 +20,7 @@ def cadastrar_produto(catalogo :list[list[object]], nome:str, preco:float, estoq
 
     produto = [nome, preco, estoque]
     catalogo.append(produto)
-    return(catalogo)
+    return catalogo
 
 def exibir_catalogo(catalogo: list[list[object]])->None:
     """
@@ -36,9 +36,12 @@ def exibir_catalogo(catalogo: list[list[object]])->None:
 
 
     for produto in catalogo:
-        return(f'{produto[nome]} - R$ {produto[preco]} ({produto[estoque]})')
+        return f'{produto[nome]} - R$ {produto[preco]:.2f} ({produto[estoque]})'
+
+def get_catalogo():
+    return catalogo
 
 
-cadastrar_produto(catalogo, "Camiseta Azul", 59.90, 120)
-cadastrar_produto(catalogo, "Tênis Runner", 199.90, 40)
-exibir_catalogo(catalogo)
+# cadastrar_produto(catalogo, "Camiseta Azul", 59.90, 120)
+# cadastrar_produto(catalogo, "Tênis Runner", 199.90, 40)
+# exibir_catalogo(catalogo)
