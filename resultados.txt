@@ -1,0 +1,5 @@
+Paciente1,45,Normal
+Paciente2,120,Alterado
+Paciente3,60,Normal
+Paciente4,200,Alterado
+Paciente5,55,Normal
